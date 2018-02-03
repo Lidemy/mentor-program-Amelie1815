@@ -22,13 +22,15 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 
 ## 零顆星（超簡單）
 
-### ❌ Opposite number
+### ✅ Opposite number
 題目連結：https://www.codewars.com/kata/opposite-number/javascript  
 題目說明：正數變負數，反之亦然
+[我的解法](https://www.codewars.com/kata/56dec885c54a926dcd001095/solutions/javascript/me/best_practice)
 
-### ❌ Even or Odd
+### ✅ Even or Odd
 題目連結：https://www.codewars.com/kata/even-or-odd/javascript  
 題目說明：判斷是奇數或是偶數
+[我的解法](https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/solutions/javascript/me/best_practice)
 
 ## 一顆星（熟悉語法）
 
