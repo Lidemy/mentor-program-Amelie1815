@@ -43,28 +43,30 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 題目連結：https://www.codewars.com/kata/who-likes-it  
 題目說明：模擬 Facebook 按讚時或出現的文字
 
-### ❌ String repeat
+### ✅ String repeat
 題目連結：https://www.codewars.com/kata/string-repeat/javascript  
 題目說明：回傳重複 n 遍的字串
+[我的解法](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/solutions/javascript/me/best_practice)
 
 ### ❌ Build Tower
 題目連結：https://www.codewars.com/kata/build-tower  
 題目說明：
 也是依照規律輸出文字即可
 
-### ❌ Reversed Strings
+### ✅ Reversed Strings
 題目連結：https://www.codewars.com/kata/reversed-strings/javascript  
-題目說明：
-把輸入的文字反轉過後回傳，如果想挑戰自己的話，可以試試看用陣列的各種內建函式組合完成
+題目說明：把輸入的文字反轉過後回傳，如果想挑戰自己的話，可以試試看用陣列的各種內建函式組合完成
+[我的解法](https://www.codewars.com/kata/5168bb5dfe9a00b126000018/solutions/javascript/me/best_practice)
 
-### ❌ Reversed Words
+### ✅ Reversed Words
 題目連結：https://www.codewars.com/kata/reversed-words  
-題目說明：
-這一題是進階版的字串反轉，原本的只要把每個「字元」反轉，這個則是要把每個「單字」反轉。
+題目說明：這一題是進階版的字串反轉，原本的只要把每個「字元」反轉，這個則是要把每個「單字」反轉。
+[我的解法](https://www.codewars.com/kata/51c8991dee245d7ddf00000e/solutions/javascript/me/best_practice)
 
-### ❌ Alternate case
+### ✅ Alternate case
 題目連結：https://www.codewars.com/kata/alternate-case  
 題目說明：把大寫字母轉成小寫，小寫字母轉成大寫
+[我的解法](https://www.codewars.com/kata/57a62154cf1fa5b25200031e/solutions/javascript/me/best_practices)
 
 ### ❌ You only need one - Beginner
 題目連結：https://www.codewars.com/kata/you-only-need-one-beginner/javascript  
