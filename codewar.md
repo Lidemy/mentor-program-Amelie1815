@@ -34,53 +34,60 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 
 ## 一顆星（熟悉語法）
 
-### ❌ Number-Star ladder
+### ✅ Number-Star ladder
 題目連結：https://www.codewars.com/kata/number-star-ladder/javascript  
-題目說明：
-這題就是依照規律輸出文字，沒什麼好講的
+題目說明：這題就是依照規律輸出文字，沒什麼好講的
+[我的解法](https://www.codewars.com/kata/5631213916d70a0979000066/solutions/javascript/me/best_practice)
 
-### ❌ Who likes it
+### ✅ Who likes it
 題目連結：https://www.codewars.com/kata/who-likes-it  
 題目說明：模擬 Facebook 按讚時或出現的文字
+[我的解法](https://www.codewars.com/kata/5266876b8f4bf2da9b000362/solutions/javascript/me/best_practice)
 
-### ❌ String repeat
+### ✅ String repeat
 題目連結：https://www.codewars.com/kata/string-repeat/javascript  
 題目說明：回傳重複 n 遍的字串
+[我的解法](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/solutions/javascript/me/best_practice)
 
 ### ❌ Build Tower
 題目連結：https://www.codewars.com/kata/build-tower  
 題目說明：
 也是依照規律輸出文字即可
 
-### ❌ Reversed Strings
+### ✅ Reversed Strings
 題目連結：https://www.codewars.com/kata/reversed-strings/javascript  
-題目說明：
-把輸入的文字反轉過後回傳，如果想挑戰自己的話，可以試試看用陣列的各種內建函式組合完成
+題目說明：把輸入的文字反轉過後回傳，如果想挑戰自己的話，可以試試看用陣列的各種內建函式組合完成
+[我的解法](https://www.codewars.com/kata/5168bb5dfe9a00b126000018/solutions/javascript/me/best_practice)
 
-### ❌ Reversed Words
+### ✅ Reversed Words
 題目連結：https://www.codewars.com/kata/reversed-words  
-題目說明：
-這一題是進階版的字串反轉，原本的只要把每個「字元」反轉，這個則是要把每個「單字」反轉。
+題目說明：這一題是進階版的字串反轉，原本的只要把每個「字元」反轉，這個則是要把每個「單字」反轉。
+[我的解法](https://www.codewars.com/kata/51c8991dee245d7ddf00000e/solutions/javascript/me/best_practice)
 
-### ❌ Alternate case
+### ✅ Alternate case
 題目連結：https://www.codewars.com/kata/alternate-case  
 題目說明：把大寫字母轉成小寫，小寫字母轉成大寫
+[我的解法](https://www.codewars.com/kata/57a62154cf1fa5b25200031e/solutions/javascript/me/best_practices)
 
-### ❌ You only need one - Beginner
+### ✅ You only need one - Beginner
 題目連結：https://www.codewars.com/kata/you-only-need-one-beginner/javascript  
 題目說明：回傳要找的元素是否在陣列裡面
+[我的解法](https://www.codewars.com/kata/57cc975ed542d3148f00015b/solutions/javascript/me/best_practice)
 
-### ❌ Find the capitals
+### ✅ Find the capitals
 題目連結：https://www.codewars.com/kata/find-the-capitals-1/javascript  
 題目說明：回傳大寫字母所在的 index
+[我的解法](https://www.codewars.com/kata/539ee3b6757843632d00026b/solutions/javascript/me/best_practice)
 
-### ❌ Sum arrays
+### ✅ Sum arrays
 題目連結：https://www.codewars.com/kata/sum-arrays/javascript  
 題目說明：把陣列加總回傳結果
+[我的解法](https://www.codewars.com/kata/53dc54212259ed3d4f00071c/solutions/javascript/me/best_practice)
 
-### ❌ Find the smallest integer in the array
+### ✅ Find the smallest integer in the array
 題目連結：https://www.codewars.com/kata/find-the-smallest-integer-in-the-array   
 題目說明：找出陣列中最小的數字
+[我的解法](https://www.codewars.com/kata/55a2d7ebe362935a210000b2/solutions/javascript/me/best_practice)
 
 ## 兩顆星（需要花點時間思考）
 
