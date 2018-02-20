@@ -69,17 +69,20 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 題目說明：把大寫字母轉成小寫，小寫字母轉成大寫
 [我的解法](https://www.codewars.com/kata/57a62154cf1fa5b25200031e/solutions/javascript/me/best_practices)
 
-### ❌ You only need one - Beginner
+### ✅ You only need one - Beginner
 題目連結：https://www.codewars.com/kata/you-only-need-one-beginner/javascript  
 題目說明：回傳要找的元素是否在陣列裡面
+[我的解法](https://www.codewars.com/kata/57cc975ed542d3148f00015b/solutions/javascript/me/best_practice)
 
-### ❌ Find the capitals
+### ✅ Find the capitals
 題目連結：https://www.codewars.com/kata/find-the-capitals-1/javascript  
 題目說明：回傳大寫字母所在的 index
+[我的解法](https://www.codewars.com/kata/539ee3b6757843632d00026b/solutions/javascript/me/best_practice)
 
-### ❌ Sum arrays
+### ✅ Sum arrays
 題目連結：https://www.codewars.com/kata/sum-arrays/javascript  
 題目說明：把陣列加總回傳結果
+[我的解法](https://www.codewars.com/kata/53dc54212259ed3d4f00071c/solutions/javascript/me/best_practice)
 
 ### ✅ Find the smallest integer in the array
 題目連結：https://www.codewars.com/kata/find-the-smallest-integer-in-the-array   
