@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        html, body {
+            margin: 0px;
+        }
+        .calculator {
+            margin: 50px auto;
+            width: 335px;
+            height: 525px;
+            background-color: black;      
+            position: relative;
+            font-family: monospace;
+            border-radius: 10px;         /* 四角的弧度 */
+            color: white;
+        }
+        .output {
+            width: 295px;
+            height: 100px;
+            background-color: rgb(50, 50, 50);
+            position: absolute;
+            margin: 20px;
+            font-size: 50px;
+            line-height: 100px;
+            border-radius: 5px;
+            text-align: end;         /* 文字靠右對齊 */
+        }
+        .elements {
+            position: absolute;
+            margin: 125px 15px 15px;
+        }
+        .elements * {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 3px;
+            line-height: 70px;          /* 行高設成和 width 一樣就會上下置中 */
+            border-radius: 3px;
+            font-size: 25px;
+            text-align: center;         /* 文字置中 */
+            background-color: rgb(100, 100, 100);
+        }
+        .elements *:hover {
+            cursor: pointer;
+        }
+        .elements *:active {            /* 游標按它時瞬間的效果 */
+            background-color: rgb(70, 70, 70);
+        }
+        .number {
+            background-color: rgb(150, 150, 150);
+        }
+        #clear {
+            width: 145px;
+        }
+        #equal {
+            background-color: dodgerblue;
+        }
+        #equal:active {
+            background-color: blue
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">0</div>
+        <div class="elements">
+            <div id="clear"><!-- 這樣的寫法是不讓換行造成 4px 的左右空隙 -->
+            c</div><div id="sqrt">
+            √</div><div id="divide">
+            ÷</div><div class="number" id="7">
+            7</div><div class="number" id="8">
+            8</div><div class="number" id="9">
+            9</div><div id="multiply">
+            ×</div><div class="number" id="4">
+            4</div><div class="number" id="5">
+            5</div><div class="number" id="6">
+            6</div><div id="minus">
+            -</div><div class="number" id="1">
+            1</div><div class="number" id="2">
+            2</div><div class="number" id="3">
+            3</div><div id="plus">
+            +</div><div class="number" id="0">
+            0</div><div class="number" id="00">
+            00</div><div class="number" id="dot">
+            .</div><div id="equal">=</div>
+        </div>
+    </div>
+    <script></script>
+</body>
