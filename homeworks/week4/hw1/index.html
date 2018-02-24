@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        html, body {
+            margin: 0px;
+        }
+        .calculator {
+            margin: 50px auto;
+            width: 335px;
+            height: 525px;
+            background-color: black;      
+            position: relative;
+            font-family: monospace;
+            border-radius: 10px;         /* 四角的弧度 */
+            color: white;
+        }
+        .output {
+            width: 295px;
+            height: 100px;
+            background-color: rgb(50, 50, 50);
+            position: absolute;
+            margin: 20px;
+            font-size: 50px;
+            line-height: 100px;
+            border-radius: 5px;
+            text-align: end;         /* 文字靠右對齊 */
+        }
+        .elements {
+            position: absolute;
+            margin: 125px 15px 15px;
+        }
+        .elements * {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            margin: 3px;
+            line-height: 70px;          /* 行高設成和 width 一樣就會上下置中 */
+            border-radius: 3px;
+            font-size: 25px;
+            text-align: center;         /* 文字置中 */
+            background-color: rgb(100, 100, 100);
+        }
+        .elements *:hover {
+            cursor: pointer;
+        }
+        .elements *:active {            /* 游標按它時瞬間的效果 */
+            background-color: rgb(70, 70, 70);
+        }
+        .number {
+            background-color: rgb(150, 150, 150);
+        }
+        #clear {
+            width: 145px;
+        }
+        #equal {
+            background-color: dodgerblue;
+        }
+        #equal:active {
+            background-color: blue
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">0</div>
+        <div class="elements">
+            <div id="clear"><!-- 這樣的寫法是不讓換行造成 4px 的左右空隙 -->
+            c</div><div id="sqrt">
+            √</div><div id="divide">
+            ÷</div><div class="number" id="seven">
+            7</div><div class="number" id="eight">
+            8</div><div class="number" id="nine">
+            9</div><div id="multiply">
+            ×</div><div class="number" id="four">
+            4</div><div class="number" id="five">
+            5</div><div class="number" id="six">
+            6</div><div id="minus">
+            -</div><div class="number" id="one">
+            1</div><div class="number" id="two">
+            2</div><div class="number" id="three">
+            3</div><div id="plus">
+            +</div><div class="number" id="zero">
+            0</div><div class="number" id="doubleZero">
+            00</div><div class="number" id="dot">
+            .</div><div id="equal">=</div>
+        </div>
+    </div>
+    <script type='text/javascript'>
+        // 數字
+        document.querySelector('#zero').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 0;
+            }
+            else {
+                document.querySelector('.output').innerText += 0;
+            }
+        });
+        document.querySelector('#one').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 1;
+            }
+            else {
+                document.querySelector('.output').innerText += 1;
+            }
+        });
+        document.querySelector('#two').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 2;
+            }
+            else {
+                document.querySelector('.output').innerText += 2;
+            }
+        });
+        document.querySelector('#three').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 3;
+            }
+            else {
+                document.querySelector('.output').innerText += 3;
+            }
+        });
+        document.querySelector('#four').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 4;
+            }
+            else {
+                document.querySelector('.output').innerText += 4;
+            }
+        });
+        document.querySelector('#five').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 5;
+            }
+            else {
+                document.querySelector('.output').innerText += 5;
+            }
+        });
+        document.querySelector('#six').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 6;
+            }
+            else {
+                document.querySelector('.output').innerText += 6;
+            }
+        });
+        document.querySelector('#seven').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 7;
+            }
+            else {
+                document.querySelector('.output').innerText += 7;
+            }
+        });
+        document.querySelector('#eight').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 8;
+            }
+            else {
+                document.querySelector('.output').innerText += 8;
+            }
+        });
+        document.querySelector('#nine').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText == 0) {
+                document.querySelector('.output').innerText = 9;
+            }
+            else {
+                document.querySelector('.output').innerText += 9;
+            }
+        });
+        /* 
+        以上加條件句來避免出現 '01' 這類數字前有 0 的狀況，但也因此無法打出 '0.1'。
+        也還不知道要怎麼讓兩個零 00 顯示出來。
+        計算的部分只先做出「兩個整數之間的計算」和「一個整數的開根號」，且重新計算前要先清空數字。
+        */
+        document.querySelector('#clear').addEventListener('click', () => {
+            document.querySelector('.output').innerText = 0;
+        });
+        document.querySelector('#plus').addEventListener('click', () => {
+            document.querySelector('.output').innerText += '+';
+        });
+        document.querySelector('#minus').addEventListener('click', () => {
+            document.querySelector('.output').innerText += '-';
+        });
+        document.querySelector('#multiply').addEventListener('click', () => {
+            document.querySelector('.output').innerText += '*';
+        });
+        document.querySelector('#divide').addEventListener('click', () => {
+            document.querySelector('.output').innerText += '/';
+        });
+        document.querySelector('#equal').addEventListener('click', () => {
+            if (document.querySelector('.output').innerText.includes('+')) {
+                document.querySelector('.output').innerText = Number(document.querySelector('.output').innerText.split('+')[0])+Number(document.querySelector('.output').innerText.split('+')[1]);
+            }
+            else if (document.querySelector('.output').innerText.includes('-')) {
+                document.querySelector('.output').innerText = Number(document.querySelector('.output').innerText.split('-')[0])-Number(document.querySelector('.output').innerText.split('-')[1]); 
+            }
+            else if (document.querySelector('.output').innerText.includes('*')) {
+                document.querySelector('.output').innerText = Number(document.querySelector('.output').innerText.split('*')[0])*Number(document.querySelector('.output').innerText.split('*')[1]);
+            }
+            else if (document.querySelector('.output').innerText.includes('/')) {
+                document.querySelector('.output').innerText = Number(document.querySelector('.output').innerText.split('/')[0])/Number(document.querySelector('.output').innerText.split('/')[1]);
+            }
+            else {};
+        });
+        document.querySelector('#sqrt').addEventListener('click', () => {
+            document.querySelector('.output').innerText = Math.sqrt(Number(document.querySelector('.output').innerText));
+        });
+    </script>
+</body>
