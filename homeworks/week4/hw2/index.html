@@ -4,11 +4,12 @@
     html, body {
         margin: 0px;
         height: 100%;
+        font-family: sans-serif;
         background-color: rgb(180, 130, 238);
     }
-    .form {
+    .background {
         width: 640px;
-        height: 1200px;
+        height: 1100px;
         margin: 100px auto;
         background-color: white;
         border-width:5px;
@@ -19,10 +20,138 @@
         font-size: 40px;
         text-align: center;
     }
+    .box1 {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-left: 15px;
+        padding: 15px;
+        background-color: transparent;
+    }
+    .box, .box2 {
+        height: 100px;
+        width: 570px;
+        margin-top: 5px;
+        margin-left: 15px;
+        padding: 15px;
+        background-color: transparent;
+    }
+    .t {
+        font-size: 20px;
+        line-height: 135%;
+    }
+    span {
+        color: red;
+    }
+    .memo {
+        font-size: 12px;
+    }
+    .textbar {
+        margin-top: 15px; 
+    }
+    input[type="text"] {
+        width: 282px;
+        height: 25px;
+        font-size: 14px;
+        border-style: solid;
+        border-color: rgb(240, 240, 240);
+        
+    }
+    input[type="submit"] {
+        height: 36px;
+        width: 88px;
+        color: #fff;
+        font-weight: 500;
+        background-color: #4285f4;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+    }
     </style>
 </head>
 <body>
-    <div class="form">
+    <div class="background">
         <div class="title">Google Forms Practice</div>
+        <div class="box1">
+            詳情請參考：<a href="https://medium.com/@hulitw/mentor-program-b5f96ae1eed1">https://medium.com/@hulitw/mentor-program-b5f96ae1eed1</a><br>
+            記得填完表單之後還要寫信報名才算成功，兩者缺一不可！<br>
+            <br>
+            <span>* Reqrired</span>
+        </div>
+        <form>
+            <div class="box">
+                <div class="t">電子郵件地址 <span>*</span></div>
+                <div class="memo">　</div>
+                <div class="textbar"><input type="text" name="email" placeholder="Your email" class="required"></div>
+                <div class="check"></div>
+            </div>
+            <div class="box">
+                <div class="t">暱稱 <span>*</span></div>
+                <div class="memo">該怎麼稱呼你</div>
+                <div class="textbar"><input type="text" name="name" placeholder="Your answer" class="required"></div>
+                <div class="check"></div>
+            </div>
+            <div class="box2">
+                <div class="t">報名類型 <span>*</span></div>
+                <div class="memo">　</div>
+                <input type="radio" name="classtype" value="工程師培養班" class="reqChecked"> 工程師培養班（每週付出四十小時，從零培養到工程師，學費是一個月薪水）<br><!-- 加了 name="兩個設成一樣的" 就是單選 -->
+                <input type="radio" name="classtype" value="業餘班" class="reqChecked"> 業餘班（依照個人目標訂立學習計畫，學費一萬五千元）
+                <div class="check2"></div>
+            </div>
+            <div class="box">
+                <div class="t">是否有程式相關背景？ <span>*</span></div>
+                <div class="memo">範例：無、高中時候學過C++、學過一點網頁前端、目前在資策會上課...</div>
+                <div class="textbar"><input type="text" name="background" placeholder="Your answer" class="required"></div>
+                <div class="check"></div>
+            </div>
+            <div class="box">
+                <div class="t">其他 <span></span></div>
+                <div class="memo">其他任何你想講的</div>
+                <div class="textbar"><input type="text" name="others" placeholder="Your answer"></div>
+            </div>
+            <div class="box">
+                <div class="memo">　</div>
+                <input type="submit" value="submit">
+            </div>
+        </form>
     </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', e => {
+            var req = document.querySelectorAll('.required');       // 這是一個 array
+            for (let i = 0; i < 3; i++) {
+                if (req[i].value === '') {
+                    document.querySelectorAll('.check')[i].innerHTML = '<div style="color:red;margin-top:3px"> Required</div>';
+                    document.querySelectorAll('.box')[i].style.backgroundColor = "rgb(255, 212, 220)";
+                    e.preventDefault();
+                }
+                else if (req[i].value !== '') {
+                    document.querySelectorAll('.check')[i].innerHTML = '';
+                    document.querySelectorAll('.box')[i].style.backgroundColor = "transparent";
+                }
+            }
+            if (document.querySelectorAll('.reqChecked')[0].checked + document.querySelectorAll('.reqChecked')[1].checked === 0) {
+                document.querySelector('.check2').innerHTML = '<div style="color:red;margin-top:3px"> Required</div>';
+                document.querySelector('.box2').style.backgroundColor = "rgb(255, 212, 220)";
+                e.preventDefault();
+            }
+            else if (document.querySelectorAll('.reqChecked')[0].checked + document.querySelectorAll('.reqChecked')[1].checked !== 0) {
+                document.querySelector('.check2').innerHTML = '';
+                document.querySelector('.box2').style.backgroundColor = "transparent";
+            }
+            if (req[0].value !== '' && req[1].value !== '' && req[2].value !== '' && document.querySelectorAll('.reqChecked')[0].checked + document.querySelectorAll('.reqChecked')[1].checked !== 0) {
+                console.log('電子郵件地址：' + req[0].value);
+                console.log('暱稱：' + req[1].value);
+                if (document.querySelectorAll('.reqChecked')[0].checked !== 0) {
+                    console.log('報名類型：工程師培養班');
+                }
+                else {
+                    console.log('報名類型：業餘班' + req[0].value);
+                }
+                console.log('程式相關背景：' + req[2].value);
+                alert('成功提交');
+            }
+        })
+
+    </script>
 </body>
