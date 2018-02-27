@@ -21,8 +21,8 @@
     <div>我在下面</div>
     <input type="button" id="a" value="hidden">
     <input type="button" id="b" value="visible">
-    <input type="button" id="c" value="display: none">
-    <input type="button" id="d" value="display: initial">
+    <input type="button" id="c" value="display 消失">
+    <input type="button" id="d" value="display 顯示">
     <script>
 
         // 元素隱形（仍佔排版空間）
@@ -44,7 +44,7 @@
                     document.querySelector(selecror).style.display = "none";
                 },
                 show: () => {
-                    document.querySelector(selecror).style.display = "initial";     // 效果並非我想像的，不知 display: none 的相反是什麼？
+                    document.querySelector(selecror).style.display = ""; // 把新增的 inline style（有關 display 的設定）消除
                 }
             }  
         };
