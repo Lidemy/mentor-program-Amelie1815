@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,initial-scale=1">
+    <title>w4hw4 化繁為簡 | Amelie</title>
+    <style type="text/css">
+    div {
+        margin: 15px;
+        padding: 15px;
+        width: 100px;
+        border-style: solid;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div>我在上面</div>
+    <div class="test" style="color:red">讓我消失</div>
+    <div>我在下面</div>
+    <input type="button" id="a" value="hidden">
+    <input type="button" id="b" value="visible">
+    <input type="button" id="c" value="display 消失">
+    <input type="button" id="d" value="display 顯示">
+    <script>
+
+        // 元素隱形（仍佔排版空間）
+        const q = (selecror) => {
+            return {    // object 才可用 key 叫出 hide() 和 show()
+                hide: function() {
+                    document.querySelector(selecror).style.visibility = "hidden";
+                },
+                show: function() {
+                    document.querySelector(selecror).style.visibility = "visible";
+                }
+            }  
+        };
+
+        // 元素不存在
+        const Q = (selecror) => {
+            return {
+                hide: () => {
+                    document.querySelector(selecror).style.display = "none";
+                },
+                show: () => {
+                    document.querySelector(selecror).style.display = ""; // 把新增的 inline style（有關 display 的設定）消除
+                }
+            }  
+        };
+
+        document.querySelector('#a').addEventListener('click', () => {
+            q('.test').hide();
+        });
+        document.querySelector('#b').addEventListener('click', () => {
+            q('.test').show();
+        });
+        document.querySelector('#c').addEventListener('click', () => {
+            Q('.test').hide();
+        });
+        document.querySelector('#d').addEventListener('click', () => {
+            Q('.test').show();
+        });
+
+    </script>
+</body>
+     
