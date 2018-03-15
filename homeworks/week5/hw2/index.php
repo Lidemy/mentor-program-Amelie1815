@@ -22,7 +22,7 @@
             <?php
                 // 把檔案 conn.php 複製貼上進來（ _once 避免多次引入相同內容）
                 require_once('conn.php');
-                
+
 				// 讀取父留言
 				$sql = "SELECT id, nickname, time, content FROM comments WHERE parent_id = 0 ORDER BY time DESC";
                 $result = $conn->query( $sql );
