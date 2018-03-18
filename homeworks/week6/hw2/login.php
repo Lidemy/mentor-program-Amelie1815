@@ -3,17 +3,19 @@
     $error_message = '';
     if (!empty($_POST['username'])) {
         $username = $_POST['username'];
-        $password = $_POST['password'];
-        $sql = "SELECT * FROM Amelie1815_users where username='$username' and password='$password'";
+        $sql = "SELECT * FROM Amelie1815_users where username='$username'";
         $result = $conn->query($sql);
-        // 有這筆會員資料
-        if ($result->num_rows > 0) {
+        if ($result->num_rows > 0) { // 有這帳號
             $row = $result->fetch_assoc();
-            // 設定一個 24 小時之後會過期的 cookie
-            setcookie("user_id", $row['id'], time()+3600*24);
-            header('Location: index.php');
-        } else {
-            $error_message = 'Incorrect username or password. Please log in again.';
+            if (password_verify('"$_POST['.password.']"', $row['password'])) { // 帳號密碼正確
+                setcookie("user_id", $row['id'], time()+3600*24);
+                header('Location: index.php');
+            }
+            else { // 密碼錯誤
+                $error_message = 'Incorrect password. Please log in again.';
+            };
+        } else { // 帳號錯誤
+            $error_message = 'Incorrect username. Please log in again.';
         };
         $conn->close();
     }
