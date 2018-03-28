@@ -1,0 +1,17 @@
+.title {
+    margin: 30px auto 10px auto;
+    text-align: center;
+    font-size: 4em;
+    color: #cccccc;
+
+}
+
+/* 把 col 置中 */
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.todo-button__clear:hover, .todo-button__done:hover {
+    cursor: pointer;
+}
