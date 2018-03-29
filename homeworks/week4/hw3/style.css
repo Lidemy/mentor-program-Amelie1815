@@ -1,11 +1,12 @@
+/* 滿版背景圖 */
 html {
     height: 100%;
 }
-
-body { /* 滿版背景圖 */
+body {
     background-image: url(background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
+
