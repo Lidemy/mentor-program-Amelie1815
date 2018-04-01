@@ -10,3 +10,61 @@ body {
     background-size: cover;
 }
 
+.container {
+    margin: 50px auto;
+    max-width: 1050px;
+}
+
+.stream-box {
+    width: 320px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.stream-box:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.stream-preview {
+    height: 180px;
+}
+
+.stream-box__info {
+    background-color: rgba(0, 0, 0, 0.8); /* rgba 的 a 是 alpha channel，表示透明度 */
+    color: rgba(255, 255, 255, 0.6);
+    height: 80px;
+}
+
+.stream-logo img {
+    display: inline-block;
+    height: 60px;
+    width:60px;
+    margin: 10px;
+    border-radius: 50%;
+    position: absolute; /* '.stream-logo' 很奇妙地向下偏移了大約 20px，原因不明，故加上這行調整。 */
+}
+
+.stream-title {
+    display: inline-block;
+    height: 100%;
+    width: 170px;
+    margin-left: 80px;
+    font-family: sans-serif;
+    font-weight: 100; /* To make the font thinner */
+}
+
+.stream-title div {
+    width: 220px;
+    margin: 10px 5px;
+    text-overflow: ellipsis;
+    overflow: hidden; /* 加了這行，上一行 text-overflow: ellipsis 才有效果 */
+    white-space: nowrap; /* 文字不換行 */
+    line-height: 1.5em; /* 不讓 emoji 影響行高 */
+}
+
+/* 防止文字換行（寫了 white-space: nowrap; 後，含有換行符號 '↵↵' 的 status 還是怪怪的） */
+br {
+    display: none;
+}
