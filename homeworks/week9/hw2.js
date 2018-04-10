@@ -19,7 +19,7 @@ function Queue () {
     };
 };
 
-// These works as well
+// These work as well
 function Stack() {
     let list = [];
     return {
