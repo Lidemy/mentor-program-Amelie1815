@@ -1,6 +1,6 @@
 // Add new todo
 $('.add-todo').keydown(function(e) {
-    if (e.which == 13) { // press enter
+    if (e.which == 13 && $('.add-todo').val() !== '') { // press enter
         addTodo(e.target.value);
     }
 });
@@ -8,7 +8,7 @@ $('.add-todo').keydown(function(e) {
 const addTodo = (value) => {
     const newTodo = getTodoHTML(value);
     $('.add-todo').val(''); // clear the input bar
-    $('.todo-list').append(newTodo);
+    $('.todo-list').prepend(newTodo); // add todo to the beginning of the list
 };
 
 const getTodoHTML = (value) => {
@@ -21,7 +21,7 @@ const getTodoHTML = (value) => {
 };
 
 /* delegate 事件代理：把監聽事件往上交給父元素。
-   以下兩功能由 '.todo__clear'、'.todo__done' 交給 '.todo-list' */
+   以下兩功能由 '.todo-button__clear'、'.todo-button__done' 交給 '.todo-list' */
 
 // Clear todo
 $('.todo-list').click(function(e) {
