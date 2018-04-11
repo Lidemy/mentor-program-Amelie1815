@@ -2,6 +2,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const babel = require('gulp-babel');
+const webpack = require('webpack-stream');
 const minifyCSS = require('gulp-csso');
 const minifyJS = require('gulp-minify');
 
@@ -15,11 +16,18 @@ gulp.task('css', () => {
 // transpile JavaScript code to ES5 
 gulp.task('es5', () => {
   return gulp.src('./es6/*.es6.js')
-        .pipe(babel({
-            presets: ['env']
-        }).on('error', es5.logError))
-        .pipe(gulp.dest('./js'))
+    .pipe(babel({
+        presets: ['env']
+    }).on('error', es5.logError))
+    .pipe(gulp.dest('./js'))
 });
+
+// run webpack
+gulp.task('webpack', () => {
+  return gulp.src('./index.js')
+    .pipe(webpack())
+    .pipe(gulp.dest('./js'));
+  });
 
 // compress CSS
 gulp.task('minifyCSS', () => {
@@ -32,18 +40,18 @@ gulp.task('minifyCSS', () => {
 gulp.task('minifyJS', () => {
   return gulp.src('./js/*.js')
     .pipe(minifyJS({
-        ext:{
-            src:'-debug.js',
-            min:'.js'
-        },
-        exclude: ['tasks'],
-        ignoreFiles: ['.combo.js', '-min.js']
+      ext:{
+          src:'-debug.js',
+          min:'.js'
+      },
+      exclude: ['tasks'],
+      ignoreFiles: ['.combo.js', '-min.js']
     }))
     .pipe(gulp.dest('./build/js'))
 });
 
 // run task
-gulp.task('default', [ 'css', 'es5', 'minifyCSS', 'minifyJS' ]);
+gulp.task('default', [ 'css', 'es5', 'webpack', 'minifyCSS', 'minifyJS' ]);
 
 
 /*
