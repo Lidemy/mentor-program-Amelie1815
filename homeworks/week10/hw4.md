@@ -4,7 +4,7 @@ Gulp is a task runner being used to automate the time-consuming and repetitive t
 
 Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser. It allows us to modular program like Node.js does and makes the structure of the code explicit. 
 
-Both of them can be used to do the same things but not in the same way. 
+Both of them can be used to do the same things such as compiling ES6 to ES5 via babel or compiling SCSS to CSS. Since they have been made for different purposes, webpack can bundle the module while gulp can't, and gulp can run the custom task in sequence while webpack can't.
 
 There is a good way to use them collaboratively: define webpack as a task being run in gulp. 
 
