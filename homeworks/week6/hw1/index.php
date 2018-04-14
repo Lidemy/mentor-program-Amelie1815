@@ -8,7 +8,6 @@
         <meta name="viewpoint" content="width=device-width,initial-scale=1">
         <title>Amelie's Message Board</title>
         <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="script.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="bar"><div class="navbar"><span class="title">Amelie's Message Board</span>
@@ -78,6 +77,7 @@
                             </div>
                             <div class="content"><?php echo nl2br(htmlspecialchars($row['content'])); ?></div>
                             <!-- Note: 先 htmlspecialchars() 跳脫，再用 nl2br() 包住所有的來顯示換行。用到多個函數時注意先後順序！ -->
+                            <div class="comment-id"><?php echo $row['comment-id']; ?></div>
 
                             <?php 
                                 $sub_sql = "SELECT * FROM Amelie1815_comments JOIN Amelie1815_users 
@@ -102,13 +102,14 @@
                                         <hr>
                                         <div class="edit-delete">
                                             <?php
-                                            // If this comment was left by the user logged in, show edit and delete button
-                                            if( isset($_COOKIE["session_id"]) && $row['user_id'] == $user_id ) { // 這裡不能用三個等於，因為記憶體位置不同。
+                                            // If this sub-comment was left by the user logged in, show edit and delete button
+                                            if( isset($_COOKIE["session_id"]) && $sub_row['user_id'] == $user_id ) { // 這裡不能用三個等於，因為記憶體位置不同。
                                                  echo '<span class="edit">edit</span> <span class="delete">delete</span>'; 
                                                 }
                                             ?>
                                         </div>
                                         <div class="content"><?php echo nl2br(htmlspecialchars($sub_row['content'])); ?></div>
+                                        <div class="comment-id"><?php echo $sub_row['comment-id']; ?></div>
                                     </div>
                             <?php 
                                     }
@@ -134,5 +135,6 @@
                 }
             ?>
         </div>
+        <script src="script.js" type="text/javascript"></script>
     </body>
 </html>
