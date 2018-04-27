@@ -21,7 +21,7 @@ shortenButton.addEventListener('click', function(){
   xhr.responseType = 'json';
   xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
-      responseField.innerText(xhr.response.data.url);
+      responseField.innerText = xhr.response.data.url;
     } else {
 			console.log('error');
 		}
