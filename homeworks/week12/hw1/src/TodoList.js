@@ -11,7 +11,9 @@ class TodoList extends React.Component {
 		};
 		this.handleChange = this.handleChange.bind(this);
     this.handleAddTodo = this.handleAddTodo.bind(this);
-    this.handleEnter = this.handleEnter.bind(this);
+		this.handleEnter = this.handleEnter.bind(this);
+		this.removeTodo = this.removeTodo.bind(this);
+		this.completeTodo = this.completeTodo.bind(this);
 		this.id = 0;
 	}
 
@@ -36,6 +38,24 @@ class TodoList extends React.Component {
     }
   }
 
+	removeTodo(todoId) {
+		this.setState({
+			todos: this.state.todos.filter(item => item.id !== todoId)
+		})
+	}
+
+	completeTodo(todoId) {
+		let newTodos = this.state.todos.map(item => {
+			if (item.id == todoId) {
+				item.completed = !item.completed;
+			}
+			return item;
+		})
+		this.setState({
+			todos: newTodos
+		})
+	}
+
 	render() {
 		return (
 			<div className="container col-12 col-sm-10 col-md-8 col-lg-7 col-xl-6">
@@ -47,8 +67,8 @@ class TodoList extends React.Component {
 					</div>
 				</div>
 				<ul className="list-group">
-          {this.state.todos.map( todo => (
-              <TodoItem key={todo.id} todoId={todo.id} text={todo.text} compeleted={todo.compeleted} />
+          {this.state.todos.map(todo => (
+              <TodoItem key={todo.id} todoId={todo.id} text={todo.text} completed={todo.completed} removeTodo={this.removeTodo} completeTodo={this.completeTodo} />
           ))}
 				</ul>
 			</div>
