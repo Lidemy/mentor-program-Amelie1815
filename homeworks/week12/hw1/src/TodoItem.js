@@ -20,12 +20,12 @@ export class TodoItem extends React.Component {
   render() {
     const {text, completed} = this.props;
     return (
-      <li className="list-group-item d-flex justify-content-between align-items-center">
+      <li className="list-group-item d-flex justify-content-between align-items-center" style={completed ? {backgroundColor: '#cccccc'} : {}}>
         { completed ? <del>{text}</del> : text }
         <span className="badge">
-          <BageItemComplete handleComplete={this.handleComplete}/><BageItemRemove handleRemove={this.handleRemove}/>
+          <BageItemComplete handleComplete={this.handleComplete} /><BageItemRemove handleRemove={this.handleRemove} />
         </span>
-			</li>
+      </li>
     )
   }
 };
