@@ -32,12 +32,12 @@ export class TodoItem extends React.Component {
 
 export class BageItemRemove extends React.Component {
   render() {
-    return <img onClick={this.props.handleRemove} style={{cursor: 'pointer'}} src="/img/ic_clear_999_24px.svg" />
+    return <img onClick={this.props.handleRemove} style={{cursor: 'pointer'}} src="./img/ic_clear_999_24px.svg" />
   }
 };
 
 export class BageItemComplete extends React.Component {
   render() {
-    return <img onClick={this.props.handleComplete} style={{cursor: 'pointer'}} src="/img/ic_done_999_24px.svg" />
+    return <img onClick={this.props.handleComplete} style={{cursor: 'pointer'}} src="./img/ic_done_999_24px.svg" />
   }
 };
