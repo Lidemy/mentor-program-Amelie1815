@@ -2,7 +2,7 @@
 
 React Router keeps your UI in sync with the URL. It has a simple API with powerful features like lazy code loading, dynamic route matching, and location transition handling built right in. 
 
-#### [HashRouter]((https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/HashRouter.md))
+#### [HashRouter](https://github.com/ReactTraining/react-router/blob/master/packages/react-router-dom/docs/api/HashRouter.md)
 
 A `<Router>` that uses the hash portion of the URL (i.e. `window.location.hash`) to keep your UI in sync with the URL.
 
