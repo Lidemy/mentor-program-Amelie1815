@@ -49,10 +49,11 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 題目說明：回傳重複 n 遍的字串
 [我的解法](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/solutions/javascript/me/best_practice)
 
-### ❌ Build Tower
+### ✅ Build Tower
 題目連結：https://www.codewars.com/kata/build-tower  
 題目說明：
 也是依照規律輸出文字即可
+[我的解法](https://www.codewars.com/kata/576757b1df89ecf5bd00073b/solutions/javascript/me/best_practice)
 
 ### ✅ Reversed Strings
 題目連結：https://www.codewars.com/kata/reversed-strings/javascript  
@@ -95,9 +96,10 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 題目連結：https://www.codewars.com/kata/shortest-word/javascript  
 題目說明：回傳最短的單字的長度
 
-### ❌ Bit Counting
+### ✅ Bit Counting
 題目連結：https://www.codewars.com/kata/bit-counting/javascript  
 題目說明：計算 bit 的總數
+[我的解法](https://www.codewars.com/kata/526571aae218b8ee490006f4/solutions/javascript/me/best_practice)
 
 ### ❌ Find The Parity Outlier
 題目連結：https://www.codewars.com/kata/find-the-parity-outlier/javascript   
