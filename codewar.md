@@ -92,18 +92,20 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 
 ## 兩顆星（需要花點時間思考）
 
-### ❌ Shortest Word
+### ✅ Shortest Word
 題目連結：https://www.codewars.com/kata/shortest-word/javascript  
 題目說明：回傳最短的單字的長度
+[我的解法](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/solutions/javascript/me/best_practice)
 
 ### ✅ Bit Counting
 題目連結：https://www.codewars.com/kata/bit-counting/javascript  
 題目說明：計算 bit 的總數
 [我的解法](https://www.codewars.com/kata/526571aae218b8ee490006f4/solutions/javascript/me/best_practice)
 
-### ❌ Find The Parity Outlier
+### ✅ Find The Parity Outlier
 題目連結：https://www.codewars.com/kata/find-the-parity-outlier/javascript   
 題目說明：全部的數字裡，只有一個的奇偶跟其他的不一樣，你要找出這個數字
+[我的解法](https://www.codewars.com/kata/5526fc09a1bbd946250002dc/solutions/javascript/me/best_practice)
 
 ### ❌ Take a Ten Minute Walk
 題目連結：https://www.codewars.com/kata/take-a-ten-minute-walk/javascript  
