@@ -107,9 +107,10 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 題目說明：全部的數字裡，只有一個的奇偶跟其他的不一樣，你要找出這個數字
 [我的解法](https://www.codewars.com/kata/5526fc09a1bbd946250002dc/solutions/javascript/me/best_practice)
 
-### ❌ Take a Ten Minute Walk
+### ✅ Take a Ten Minute Walk
 題目連結：https://www.codewars.com/kata/take-a-ten-minute-walk/javascript  
 題目說明：有一個人他可以往東南西北這四個方向走，請幫他計算它能否剛好在十步的時候回到原點
+[我的解法](https://www.codewars.com/kata/54da539698b8a2ad76000228/solutions/javascript/me/best_practice)
 
 ### ❌ Tribonacci Sequence
 題目連結：https://www.codewars.com/kata/tribonacci-sequence/javascript  
