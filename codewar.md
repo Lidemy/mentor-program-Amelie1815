@@ -112,11 +112,12 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 題目說明：有一個人他可以往東南西北這四個方向走，請幫他計算它能否剛好在十步的時候回到原點
 [我的解法](https://www.codewars.com/kata/54da539698b8a2ad76000228/solutions/javascript/me/best_practice)
 
-### ❌ Tribonacci Sequence
+### ✅ Tribonacci Sequence
 題目連結：https://www.codewars.com/kata/tribonacci-sequence/javascript  
 題目說明：費式數列的進階版
+[我的解法](https://www.codewars.com/kata/556deca17c58da83c00002db/solutions/javascript/me/best_practice)
 
-### ❌ A Man and his Umbrellas
+### ✅ A Man and his Umbrellas
 題目連結：https://www.codewars.com/kata/a-man-and-his-umbrellas/javascript  
 題目說明：  
 這題需要花多一點時間去思考。
@@ -128,6 +129,7 @@ input 會給你每天的氣象預報，基本上就是下雨跟沒下雨。如�
 舉例來說：`["rainy", "clear", "rainy", "cloudy"]`，就是第一天早上下雨，所以要買第一把傘到公司，回家的時候沒下雨，所以把傘放在公司。而第二天早上又下雨，家裡沒傘，需要買第二把傘，因此答案是 2。
 
 `["rainy", "rainy", "rainy", "rainy", "thunderstorms", "rainy"]`的話，每一天的早上跟晚上都在下雨，所以只要買一把傘就可以從家裡到公司，再從公司帶回家裡。
+[我的解法](https://www.codewars.com/kata/a-man-and-his-umbrellas/solutions/javascript/me/best_practice)
 
 ### ❌ Check if two words are isomorphic to each other
 題目連結：https://www.codewars.com/kata/check-if-two-words-are-isomorphic-to-each-other  
