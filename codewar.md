@@ -49,10 +49,11 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 題目說明：回傳重複 n 遍的字串
 [我的解法](https://www.codewars.com/kata/57a0e5c372292dd76d000d7e/solutions/javascript/me/best_practice)
 
-### ❌ Build Tower
+### ✅ Build Tower
 題目連結：https://www.codewars.com/kata/build-tower  
 題目說明：
 也是依照規律輸出文字即可
+[我的解法](https://www.codewars.com/kata/576757b1df89ecf5bd00073b/solutions/javascript/me/best_practice)
 
 ### ✅ Reversed Strings
 題目連結：https://www.codewars.com/kata/reversed-strings/javascript  
@@ -91,27 +92,32 @@ Codewar 是一個程式解題平台，上面充滿著各種開發者出的題目
 
 ## 兩顆星（需要花點時間思考）
 
-### ❌ Shortest Word
+### ✅ Shortest Word
 題目連結：https://www.codewars.com/kata/shortest-word/javascript  
 題目說明：回傳最短的單字的長度
+[我的解法](https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/solutions/javascript/me/best_practice)
 
-### ❌ Bit Counting
+### ✅ Bit Counting
 題目連結：https://www.codewars.com/kata/bit-counting/javascript  
 題目說明：計算 bit 的總數
+[我的解法](https://www.codewars.com/kata/526571aae218b8ee490006f4/solutions/javascript/me/best_practice)
 
-### ❌ Find The Parity Outlier
+### ✅ Find The Parity Outlier
 題目連結：https://www.codewars.com/kata/find-the-parity-outlier/javascript   
 題目說明：全部的數字裡，只有一個的奇偶跟其他的不一樣，你要找出這個數字
+[我的解法](https://www.codewars.com/kata/5526fc09a1bbd946250002dc/solutions/javascript/me/best_practice)
 
-### ❌ Take a Ten Minute Walk
+### ✅ Take a Ten Minute Walk
 題目連結：https://www.codewars.com/kata/take-a-ten-minute-walk/javascript  
 題目說明：有一個人他可以往東南西北這四個方向走，請幫他計算它能否剛好在十步的時候回到原點
+[我的解法](https://www.codewars.com/kata/54da539698b8a2ad76000228/solutions/javascript/me/best_practice)
 
-### ❌ Tribonacci Sequence
+### ✅ Tribonacci Sequence
 題目連結：https://www.codewars.com/kata/tribonacci-sequence/javascript  
 題目說明：費式數列的進階版
+[我的解法](https://www.codewars.com/kata/556deca17c58da83c00002db/solutions/javascript/me/best_practice)
 
-### ❌ A Man and his Umbrellas
+### ✅ A Man and his Umbrellas
 題目連結：https://www.codewars.com/kata/a-man-and-his-umbrellas/javascript  
 題目說明：  
 這題需要花多一點時間去思考。
@@ -123,10 +129,12 @@ input 會給你每天的氣象預報，基本上就是下雨跟沒下雨。如�
 舉例來說：`["rainy", "clear", "rainy", "cloudy"]`，就是第一天早上下雨，所以要買第一把傘到公司，回家的時候沒下雨，所以把傘放在公司。而第二天早上又下雨，家裡沒傘，需要買第二把傘，因此答案是 2。
 
 `["rainy", "rainy", "rainy", "rainy", "thunderstorms", "rainy"]`的話，每一天的早上跟晚上都在下雨，所以只要買一把傘就可以從家裡到公司，再從公司帶回家裡。
+[我的解法](https://www.codewars.com/kata/a-man-and-his-umbrellas/solutions/javascript/me/best_practice)
 
-### ❌ Check if two words are isomorphic to each other
+### ✅ Check if two words are isomorphic to each other
 題目連結：https://www.codewars.com/kata/check-if-two-words-are-isomorphic-to-each-other  
 題目說明：  
 這題比較複雜一點，如果兩個字串 A 跟 B 存在「一對一關係」，那我們就可以說這兩個字串是同構（isomorphic）的。  
 
 舉例來說，ABB 跟 CDD，A 對應到 C，B 對應到 D，存在一對一的關係，所以是同構的。
+[我的解法](https://www.codewars.com/kata/59dbab4d7997cb350000007f/solutions/javascript/me/best_practice)
